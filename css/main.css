@@ -1003,10 +1003,8 @@ img {
     margin-bottom: 3rem;
     transition: all 0.35s ease-in-out;
     outline: none;
-    transform: scale(1);
     box-shadow: 23px 12px 37px 17px rgba(150, 150, 150, 0.1); }
     .contact-form .text-input:focus {
-      transform: scale(1.05);
       outline: none;
       background: #fff;
       border: 2px solid rgba(207, 33, 93, 0.5); }
@@ -1020,10 +1018,8 @@ img {
     height: 200px;
     border-radius: 50px;
     transition: all 0.35s ease-in-out;
-    transform: scale(1);
     box-shadow: 23px 12px 37px 17px rgba(150, 150, 150, 0.1); }
     .contact-form .text-area:focus {
-      transform: scale(1.05);
       outline: none;
       background: #fff;
       border: 2px solid rgba(207, 33, 93, 0.5); }
@@ -1055,7 +1051,15 @@ img {
 
 @media only screen and (min-width: 992px) {
   .contact-bg {
-    border-radius: 100px; } }
+    border-radius: 100px; }
+  .contact-form .text-input {
+    transform: scale(1); }
+    .contact-form .text-input:focus {
+      transform: scale(1.05); }
+  .contact-form .text-area {
+    transform: scale(1); }
+    .contact-form .text-area:focus {
+      transform: scale(1.05); } }
 
 #home-footer .footer-content {
   display: flex;
