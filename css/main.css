@@ -1053,5 +1053,26 @@ img {
   .contact-form {
     grid-template-columns: repeat(1, 0.65fr); } }
 
+@media only screen and (min-width: 992px) {
+  .contact-bg {
+    border-radius: 100px; } }
+
+#home-footer .footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  #home-footer .footer-content .finito {
+    font-family: "Mulish", "Arial", sans-serif;
+    font-weight: 500;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center; }
+  #home-footer .footer-content .restart {
+    font-family: "Mulish", "Arial", sans-serif;
+    font-weight: 500;
+    color: #CF215D;
+    font-size: 1.2rem;
+    text-align: center; }
+
 body {
   background: #fff; }
