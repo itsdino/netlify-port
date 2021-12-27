@@ -1,6 +1,6 @@
 // initializes lax
 window.onload = () => {
-  AOS.init();
+  AOS.init({once: true});
   console.log("runnam bitc");
 };
 
