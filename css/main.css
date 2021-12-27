@@ -1051,15 +1051,7 @@ img {
 
 @media only screen and (min-width: 992px) {
   .contact-bg {
-    border-radius: 100px; }
-  .contact-form .text-input {
-    transform: scale(1); }
-    .contact-form .text-input:focus {
-      transform: scale(1.05); }
-  .contact-form .text-area {
-    transform: scale(1); }
-    .contact-form .text-area:focus {
-      transform: scale(1.05); } }
+    border-radius: 100px; } }
 
 #home-footer .footer-content {
   display: flex;
