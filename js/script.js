@@ -2,6 +2,12 @@
 window.onload = () => {
   AOS.init({once: false});
   console.log("runnam bitc");
+  lax.setup();
+  const updateLax = () => {
+    lax.update(window.scrollY);
+    window.requestAnimationFrame(updateLax);
+  };
+  window.requestAnimationFrame(updateLax);
 };
 
 // scroll to top button (to be implemented)
@@ -67,7 +73,7 @@ const getActiveMenuItem = () => {
 };
 
 // jQuery smooth scroll to element
-$("#navbar ul li a, .site-link").on("click", function (e) {
+$("#navbar ul li a, .restart").on("click", function (e) {
   if (this.hash !== "") {
     e.preventDefault();
     const hash = this.hash;

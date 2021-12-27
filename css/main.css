@@ -548,9 +548,9 @@ img {
   position: relative; }
   #header-main .header-img {
     background: url("../img/site-components/hero-img.png") no-repeat 50% 0/cover;
-    bottom: 0;
     position: absolute;
     top: 0;
+    bottom: 0;
     width: 100%;
     z-index: -2;
     overflow: show; }
@@ -580,7 +580,7 @@ img {
         text-shadow: 0px 1px 21px rgba(150, 150, 150, 0.15); }
       #header-main .header-wrapper .header-content .subtitle {
         color: #666;
-        font-family: "Mulish", "Arial", sans-serif;
+        font-family: 'Mulish', sans-serif;
         font-size: 5.9vw;
         font-weight: 500; }
 
@@ -593,7 +593,7 @@ img {
 @media only screen and (min-width: 768px) {
   #header-main .header-img {
     background: url("../img/site-components/hero-img.png") no-repeat 50% 100%/cover;
-    overflow: visible; }
+    overflow-y: visible; }
   #header-main .header-wrapper {
     height: 100vh; }
     #header-main .header-wrapper .header-content h1 {
