@@ -173,6 +173,17 @@ img {
     transform: scale(1.75);
     opacity: 1; } }
 
+@keyframes slomo-zoom {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+
 /* spartan-300 - latin */
 @font-face {
   font-family: 'Spartan';
@@ -274,6 +285,17 @@ img {
     opacity: 1; }
   100% {
     transform: scale(1.75);
+    opacity: 1; } }
+
+@keyframes slomo-zoom {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    transform: scale(1);
     opacity: 1; } }
 
 .btn-cta, .btn-body {
@@ -541,6 +563,50 @@ img {
   .navigation .menu-icon {
     display: none; } }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.75; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes pulse-small {
+  0% {
+    transform: scale(1.05);
+    opacity: 1; }
+  50% {
+    transform: scale(1);
+    opacity: 0.75; }
+  100% {
+    transform: scale(1.05);
+    opacity: 1; } }
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    transform: scale(1.75);
+    opacity: 1; } }
+
+@keyframes slomo-zoom {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+
 #header-main {
   height: 100vh;
   box-sizing: border-box;
@@ -548,12 +614,13 @@ img {
   position: relative; }
   #header-main .header-img {
     background: url("../img/site-components/hero-img.png") no-repeat 50% 0/cover;
+    animation: slomo-zoom 30s ease-in-out 3s infinite;
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
     z-index: -2;
-    overflow: show; }
+    overflow: hidden; }
     #header-main .header-img:after {
       content: "";
       height: 100%;
@@ -593,7 +660,8 @@ img {
 @media only screen and (min-width: 768px) {
   #header-main .header-img {
     background: url("../img/site-components/hero-img.png") no-repeat 50% 100%/cover;
-    overflow-y: visible; }
+    animation: slomo-zoom 30s ease-in-out 3s infinite;
+    overflow-y: hidden; }
   #header-main .header-wrapper {
     height: 100vh; }
     #header-main .header-wrapper .header-content h1 {
@@ -637,6 +705,17 @@ img {
     opacity: 1; }
   100% {
     transform: scale(1.75);
+    opacity: 1; } }
+
+@keyframes slomo-zoom {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    transform: scale(1);
     opacity: 1; } }
 
 .skills-bg {
@@ -822,6 +901,17 @@ img {
     transform: scale(1.75);
     opacity: 1; } }
 
+@keyframes slomo-zoom {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+
 .projects-bg {
   background: #EAFCF2;
   border-radius: 50px;
@@ -950,6 +1040,17 @@ img {
     opacity: 1; }
   100% {
     transform: scale(1.75);
+    opacity: 1; } }
+
+@keyframes slomo-zoom {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  50% {
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    transform: scale(1);
     opacity: 1; } }
 
 .contact-bg {
