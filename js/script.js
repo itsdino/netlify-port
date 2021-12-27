@@ -1,6 +1,6 @@
 // initializes lax
 window.onload = () => {
-  AOS.init({once: true});
+  AOS.init({once: false});
   console.log("runnam bitc");
 };
 
@@ -49,7 +49,7 @@ const menuItemHighlightHandler = () => {
   if (scrollPosition < 1100) {
     getActiveMenuItem();
     menuLinksConst[0].classList.add("active");
-  } else if (scrollPosition < 3150) {
+  } else if (scrollPosition < 2900) {
     getActiveMenuItem();
     menuLinksConst[1].classList.add("active");
   } else {
@@ -73,9 +73,9 @@ $("#navbar ul li a, .site-link").on("click", function (e) {
     const hash = this.hash;
     $("html, body").animate(
       {
-        scrollTop: $(hash).offset().top - -80,
+        scrollTop: $(hash).offset().top,
       },
-      1000
+      1250
     );
   }
 });
