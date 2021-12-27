@@ -278,44 +278,41 @@ img {
 
 .btn-cta, .btn-body {
   border: none;
-  border-radius: 50px;
+  border-radius: 100%;
   cursor: pointer;
   display: inline-block;
-  padding: 1rem 2.6rem;
   transition: all 0.5s ease-in-out;
-  line-height: 1;
   text-align: center; }
 
 .btn-cta {
   background-color: white;
   color: #333;
-  line-height: 23px;
-  margin: 1.5rem 1rem;
-  padding: 1.3rem 1.2rem;
-  border-radius: 100%;
-  transition: all 0.5s ease-in-out; }
+  height: 5rem;
+  width: 5rem;
+  margin: 2rem 1rem; }
   .btn-cta .icon {
-    height: 35px;
-    width: 35px; }
+    margin-top: 1.25rem;
+    height: 2.5rem;
+    width: 2.5rem; }
+  .btn-cta:hover {
+    animation: pulse 1.5s ease-in-out infinite; }
 
 .btn-body {
+  padding: 0;
+  line-height: 0;
   background-color: white;
-  color: #333;
-  line-height: 23px;
   margin: 0;
-  margin-bottom: 5px;
-  padding: 1.3rem 1.2rem;
-  border-radius: 100%;
-  transition: all 0.5s ease-in-out; }
+  height: 5rem;
+  width: 5rem;
+  position: relative; }
   .btn-body .icon {
-    height: 35px;
-    width: 35px; }
-
-button[class^="btn-"]:hover,
-a[class^="btn-"]:hover,
-input[class^="btn"]:hover {
-  background-color: #fff;
-  animation: pulse 1.5s ease-in-out infinite; }
+    position: absolute;
+    top: 32%;
+    left: 27%;
+    height: 2rem;
+    width: 2rem; }
+  .btn-body:hover {
+    animation: pulse 1.5s ease-in-out infinite; }
 
 #navbar .container {
   width: 100%; }
@@ -675,9 +672,9 @@ input[class^="btn"]:hover {
     z-index: 1;
     box-shadow: 23px 12px 37px 17px rgba(150, 150, 150, 0.1); }
     .skill-grid .skill-card-title {
-      font-family: "Spartan", "Arial", sans-serif;
-      font-weight: 500;
-      letter-spacing: -0.1rem;
+      font-family: "Mulish", "Arial", sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.05rem;
       color: #666;
       font-size: 1.8rem;
       line-height: 1.2;
@@ -686,7 +683,8 @@ input[class^="btn"]:hover {
     .skill-grid .skill-card-list {
       color: #8B6868;
       font-family: "Mulish", "Arial", sans-serif;
-      font-size: 1rem;
+      font-weight: 400;
+      font-size: 1.2rem;
       list-style: none;
       list-style-position: outside;
       padding-left: 0.75rem; }
@@ -858,15 +856,17 @@ input[class^="btn"]:hover {
         text-align: center; }
         .projects-bg .project-grid .project-card .project-description .p-title {
           color: #666;
-          font-family: "Spartan", "Arial", sans-serif;
-          font-size: clamp(0.1rem 5.2vw, 1.1rem);
-          letter-spacing: -0.1rem;
+          font-family: "Mulish", "Arial", sans-serif;
+          font-weight: 500;
+          font-size: 1.2rem;
           margin: 0 0 0.75rem 0;
           font-weight: 500; }
         .projects-bg .project-grid .project-card .project-description .p-type {
           margin: 0.2rem;
           display: inline-block;
-          font-size: clamp(0.1rem, 2.6vw, 0.7rem);
+          font-family: "Mulish", "Arial", sans-serif;
+          font-weight: 400;
+          font-size: clamp(0.1rem, 3vw, 1rem);
           padding: 0.4rem 0.7rem;
           background: #8EFFC3;
           color: #325a44;
@@ -973,8 +973,8 @@ input[class^="btn"]:hover {
 
 .contact-form {
   font-family: "Mulish", "Arial", sans-serif;
-  font-weight: 700;
-  color: #333;
+  font-weight: 500;
+  color: #2B425E;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -989,6 +989,7 @@ input[class^="btn"]:hover {
     .contact-form .input-label .input-required {
       opacity: 0.6;
       text-transform: uppercase;
+      font-weight: 400;
       font-size: 0.6rem;
       color: rgba(50, 50, 50, 0.7); }
   .contact-form .text-input {
@@ -1015,7 +1016,7 @@ input[class^="btn"]:hover {
     font-size: 1rem;
     resize: none;
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     height: 200px;
     border-radius: 50px;
     transition: all 0.35s ease-in-out;
