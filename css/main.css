@@ -322,6 +322,7 @@ input[class^="btn"]:hover {
 
 .navigation {
   font-family: "Mulish", "Arial", sans-serif;
+  font-weight: 500;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -361,7 +362,7 @@ input[class^="btn"]:hover {
   -webkit-box-shadow: 0px 2px 30px -1px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 2px 30px -1px rgba(0, 0, 0, 0.08);
   font-family: "Mulish", "Arial", sans-serif;
-  background: rgba(207, 33, 93, 0.95);
+  background: rgba(207, 33, 93, 0.96);
   border-radius: 100%;
   color: #fff;
   display: inline-block;
