@@ -332,11 +332,10 @@ input[class^="btn"]:hover {
   z-index: 99; }
 
 .navigation ul {
-  background: rgba(55, 55, 55, 0.95);
+  background: transparent;
   width: 100%;
   position: absolute;
   left: 0;
-  border-radius: 0 0 50px 50px;
   color: white;
   list-style: none;
   margin: 0;
@@ -349,24 +348,29 @@ input[class^="btn"]:hover {
     display: none; }
 
 .navigation li {
-  margin: 10px 20px;
+  margin: 1rem 1.5rem;
   opacity: 0;
-  text-align: center;
-  transform: translateY(-25vh);
-  transition: transform 0.3s ease-out, opacity 0.25s ease-in, margin-top 0.15s ease-in-out; }
+  text-align: right;
+  transition: all 0.35s ease-in-out; }
   .navigation li:first-child {
     margin-top: 100px; }
   .navigation li:last-child {
     margin-bottom: 20px; }
 
 .navigation li a {
-  border-radius: 50px;
-  color: white;
-  display: block;
-  font-size: 1rem;
-  padding: 10px 0;
+  -webkit-box-shadow: 0px 2px 30px -1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 30px -1px rgba(0, 0, 0, 0.08);
+  font-family: "Mulish", "Arial", sans-serif;
+  background: rgba(207, 33, 93, 0.8);
+  border-radius: 100%;
+  color: #fff;
+  display: inline-block;
+  width: 4.8rem;
+  font-size: 0.9rem;
+  padding: 1.6rem 0.6rem;
+  text-align: center;
   text-decoration: none;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.35s ease-in-out; }
 
 .navigation li a:hover,
 .navigation .menu-btn:hover {
@@ -388,8 +392,8 @@ input[class^="btn"]:hover {
 /* menu */
 .navigation .menu {
   clear: both;
-  max-height: 0;
-  transition: max-height 0.4s ease-out; }
+  transform: translateX(100vw);
+  transition: transform 0.35s ease-in-out; }
 
 /* menu icon */
 .navigation .menu-icon {
@@ -410,7 +414,7 @@ input[class^="btn"]:hover {
   display: block;
   height: 2px;
   position: relative;
-  transition: all 0.2s ease-out;
+  transition: all 0.35s ease-out;
   width: 25px; }
 
 .navigation .menu-icon .navicon:before,
@@ -420,7 +424,7 @@ input[class^="btn"]:hover {
   display: block;
   height: 100%;
   position: absolute;
-  transition: all 0.2s ease-out;
+  transition: all 0.35s ease-out;
   width: 100%; }
 
 .navigation .menu-icon .navicon:before {
@@ -433,11 +437,12 @@ input[class^="btn"]:hover {
   display: none; }
 
 .navigation .menu-btn:checked ~ .menu {
-  max-height: calc(100vh - 56px); }
+  max-height: calc(100vh - 56px);
+  transform: translateX(0); }
 
 .navigation .menu-btn:checked ~ .menu li {
   opacity: 1;
-  transform: translateY(0); }
+  transform: translateX(0); }
 
 .navigation .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent; }
@@ -483,6 +488,8 @@ input[class^="btn"]:hover {
       margin-bottom: 0;
       margin-right: 0; }
   .navigation li a {
+    -webkit-box-shadow: none;
+    box-shadow: none;
     background: rgba(255, 255, 255, 0.8);
     color: #333;
     font-size: 1.1rem;
@@ -493,7 +500,8 @@ input[class^="btn"]:hover {
     position: relative;
     z-index: 98;
     overflow: hidden;
-    border-radius: 0; }
+    border-radius: 0;
+    width: auto; }
     .navigation li a.first {
       border-radius: 0 0 0 25px; }
     .navigation li a.mid {
@@ -530,7 +538,8 @@ input[class^="btn"]:hover {
     clear: none;
     float: right;
     max-height: none;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0); }
   .navigation .menu-icon {
     display: none; } }
 
